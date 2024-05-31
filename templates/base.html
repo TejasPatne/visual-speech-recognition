@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ViSpNet: Vision Speech Network</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <!-- Body -->
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ViSpNet</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tryout">Try Out</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/TejasPatne/visual-speech-recognition"
+                >Code</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/static/vispnet-report-2024.pdf"
+                >Report</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.canva.com/design/DAFwakSd5E4/DC5jtsyZgxTQseEEr3AF-A/view"
+                >Presentation</a
+              >
+            </li>
+          </ul>
+          <span class="navbar-text"> Know More </span>
+        </div>
+      </div>
+    </nav>
+
+    {% block body %}
+
+    {% endblock body %}
+
+    <!-- <img style="width: 100vw;" src="/static/thankyou.jpg" alt="thank you"> -->
+    <!-- footer -->
+    <div class="text-primary" style="background-color: #001220;">
+      <div class="container p-5">
+        <div class="row text-white">
+          <div class="col">
+            <h4>Team Members</h4>
+            <ul class="list-group bg-secondary text-white">
+              <li class="list-group-item bg-secondary text-white">Tejas Patne</li>
+              <li class="list-group-item bg-secondary text-white">Arya Kurup</li>
+              <li class="list-group-item bg-secondary text-white">Akshat Tiwari</li>
+              <li class="list-group-item bg-secondary text-white">Rupesh Dhirwani</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Mentors</h4>
+            <ul class="list-group bg-secondary text-white">
+              <li class="list-group-item bg-secondary text-white">Dr. (Mrs.) M. Vijayalakshmi (HOD)</li>
+              <li class="list-group-item bg-secondary text-white">Mrs. Mamata Choudhari</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div
+      class="container-fluid bg-image text-primary p-5 text-center"
+      style="
+        background-image: url('/static//thankyou.svg');
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <h2 class="fw-bold fs-1 mt-5">Thank you for visiting!</h2>
+    </div>
+
+  </body>
+
+  <!-- Scripts -->
+  <script src="{{ url_for('static', filename='uploadvideo.js') }}"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"
+  ></script>
+</html>

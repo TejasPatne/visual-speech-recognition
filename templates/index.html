@@ -1,0 +1,86 @@
+{% extends 'base.html' %} {% block body %}
+
+<!-- banner -->
+<div
+  class="container-fluid bg-image text-primary p-5 text-center"
+  style="
+    background-image: url('https://i.pinimg.com/originals/d6/a4/db/d6a4db7983112c867f7ec4d71e754292.gif');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  "
+>
+  <h1 class="fw-bolder">ViSpNet: Visual Speech Network</h1>
+  <p class="fs-5 text-secondary mt-5">
+    Visual Speech Network, where cutting-edge AI technology converges with the
+    realms of vision and speech. ViSpNet is a groundbreaking model designed to
+    predict speech from silent videos by analyzing the visual cues of a speaker.
+    Through advanced machine learning algorithms, ViSpNet deciphers the
+    intricate relationship between lip movements, facial expressions, and spoken
+    language, bringing a new dimension to speech recognition and understanding.
+    With ViSpNet, we embark on a journey to unlock the potential of silent
+    videos, revolutionizing the way we perceive and interact with audiovisual
+    content.
+  </p>
+</div>
+<div
+  class="container-fluid bg-image text-primary p-5 text-center"
+  style="
+    background-image: url('/static//layered-waves-haikei.svg');
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  "
+></div>
+
+<!-- features section -->
+<div id="features">
+  <!-- Write about features here! -->
+</div>
+
+<!-- try out section -->
+<div class="my-3" id="tryout">
+  <h1 class="text-center mt-5 mb-5">Upload a Video</h1>
+  <div class="container mt-3 mb-5">
+    <div class="row">
+      <div class="col">
+        <div class="row justify-content-center">
+          <div class="col-md-6 justify-content-center">
+            <input
+              class="form-control justify-content-center"
+              type="file"
+              id="videoInput"
+              accept="video/*"
+            />
+          </div>
+        </div>
+        <div class="row justify-content-center mt-3 mx-auto">
+          <div class="col-md-6 mx-auto">
+            <button class="btn btn-primary w-100 mx-auto" onclick="uploadVideo()">
+              Upload
+            </button>
+          </div>
+          <div class="mx-auto ml-5 row justify-content-center" id="videoContainer"></div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="text-center justify-content-center mt-3 mb-3">
+          <!-- <div class="col-md-8">
+          </div> -->
+          <button class="btn btn-outline-primary" id="predictbtn" disabled>
+            Predict the Speech
+          </button>
+          <div class="fs-5 fw-normal text-secondary mt-3 mb-2">
+            Speech: <span class="text-success bd-highlight" id="output"></span>
+          </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary" onclick="myFunction()">Copy text</button>
+        </div>
+      </div 
+    </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+{% endblock %}
